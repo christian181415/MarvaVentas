@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Transporte,Marva,Contenedores,Nodrizas,Multimodal,Calidad,Vehiculos">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon-bar" type="image/png" href="assets/images/Logotipos/LMarva_Icon.png">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="assets/css/fontawesome-free-6.7.2-web/css/all.min.css" rel="stylesheet">
+
+    <title>Marva | Equipo Seminuevo</title>
+</head>
+<body>
+  <!--Barra de navegacion-->
+  <div class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light bg-marva">
+      <div class="container">
+        <a class="navbar-brand" href="http://marva.com.mx"><img class="logo" src="assets/images/Logotipos/LMarva_Menu.png" alt="Transportes Marva"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="https://www.marva.com.mx/#services">NOSOTROS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.marva.com.mx/#contact">CONTACTO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.marva.com.mx/#gallery-top">SERVICIOS</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">CLIENTES</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="https://www.marva.com.mx/loginRastreo2019.aspx">RASTREO</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <!--Tarjetas dinamicas [carga mediante js]-->
+    <main class="flex-grow-1">
+      <div class="container my-5">
+        <div id="cardsContainer" class="row"></div>            
+      </div>
+      <!--Canvas dinamico [carga mediante js]-->
+      <div class="offcanvas offcanvas-end custom-offcanvas" tabindex="-1" id="MostrarUnidad" aria-labelledby="offcanvasLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title txt-marva" id="offcanvasLabel"><strong>EQUIPO SEMINUEVO</strong></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body custom-height">
+          <div class="row g-4 align-items-center">
+            <div class="col-12 offcanvas-body">
+              <!--Carga de imagenes dinamicas-->
+              <img id="offcanvasImage" src="" class="img-fluid rounded shadow-sm canvasImage" alt="">
+            </div>
+            <div class="col-12 bg-data mv-blue">
+              <p class="contactos"><strong>INFORMACIÓN</strong></p>
+              <!--Carga de los detalles dinamico-->
+              <div id="offcanvasDetails"></div>
+            </div>
+            <div class="col-12 bg-data mv-blue">
+              <p class="contactos"><strong>CONTACTOS</strong></p>
+              <p class="contactos"><strong><i class="fa-solid fa-user"></i> Nombre: </strong>Alberto Torres</p>
+              <p class="contactos"><strong><i class="fa-solid fa-phone"></i> Telefono: </strong>554-345-0233</p>
+              <p class="contactos"><strong><i class="fa-solid fa-envelope"></i> Email: </strong><a class="mv-red" href="mailto:ventaequipousado@marva.com.mx">ventaequipousado@marva.com.mx</a></p>
+              <p></p>
+              <p class="contactos"><strong><i class="fa-solid fa-user"></i> Nombre: </strong>Gabriel Calcáneo</p>
+              <p class="contactos"><strong><i class="fa-solid fa-phone"></i> Telefono: </strong>552-966-3185</p>
+              <p class="contactos"><strong><i class="fa-solid fa-envelope"></i> Email: </strong><a class="mv-red" href="mailto:ventaseminuevos@marva.com.mx">ventaseminuevos@marva.com.mx</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-light text-dark">
+      <div class="container">
+        <div class="row text-center py-3">
+          <img src="assets/images/Logotipos/LMarva_Menu.png" alt="Transportes Marva" class="mx-auto logo">
+        </div>
+        <div class="row text-center">
+          <div class="col-sm-3 col-md-3 mb-2"><a class="btn btn-outline-dark socialmedia"><i class="fa-brands fa-facebook"></i></a></div>
+          <div class="col-sm-3 col-md-3 mb-2"><a class="btn btn-outline-dark socialmedia"><i class="fa-brands fa-twitter"></i></a></div>
+          <div class="col-sm-3 col-md-3 mb-2"><a class="btn btn-outline-dark socialmedia"><i class="fa-brands fa-behance"></i></a></div>
+          <div class="col-sm-3 col-md-3 mb-2"><a class="btn btn-outline-dark socialmedia"><i class="fa-brands fa-linkedin"></i></a></div>
+        </div>
+      </div>
+      <div class="text-center">
+        <p class="mb-0 txt-footer">&copy; TRANSPORTES MARVA 2025</p>
+        <p class="mb-0">Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </div>
+  
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/papaparse.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

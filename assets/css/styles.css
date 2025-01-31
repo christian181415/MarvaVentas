@@ -1,0 +1,72 @@
+.logo {width: 100px; /*Tamaño del logotipo navbar*/}
+.row .logo {width: 15%; /*Tamaño del logotipo footer*/}
+.bg-marva {background-color: #2f529a !important; /*background color marva*/}
+.mv-blue {color: #2f529a; /*letras color marva*/}
+.mv-red {color: #ed3237; /*letras color marva*/}
+.socialmedia {width: 80%; /*Ancho de botones en iconos de footer*/}
+.unidades {width: 50%;}
+.contactos {margin: 0;}
+
+.bg-data {
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /*Sombra de la tarjeta*/
+    border-radius: 10px; /*Borde de la tarjeta*/
+}
+
+.txt-footer {
+	font-family: 'Dosis', sans-serif;
+	letter-spacing: 0.5em;
+	text-transform: uppercase;
+	font-size: 12px;
+	line-height: 1.6;
+}
+
+.card {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /*Sombra de la tarjeta*/
+    border-radius: 10px; /*Borde de la tarjeta*/
+}
+
+.card:hover {
+	transform: scale(1.02); /* Zoom suave */
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /*Sombra de la tarjeta*/
+  }
+
+.card,
+.navbar-collapse,
+.offcanvas-end,
+.carousel-item {
+  transition: all 0.4s ease-in-out !important; /*Transiciones globales para hacer cambios más fluidos*/
+}
+
+.custom-offcanvas {width: 80% !important; /*Espacio que ocupa el canvas*/}
+.canvasImage {width: 700px;}
+.offcanvas-body {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	height: 50%; /* Asegura que el contenido ocupe todo el offcanvas */
+  }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none; /*Elimina el ícono SVG predeterminado de Bootstrap*/
+  width: 30px; /*Ancho del icono*/
+  height: 30px; /*Alto del icono*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%; /*Botones redondeados*/
+}
+
+.carousel-control-prev-icon::after,
+.carousel-control-next-icon::after {
+  content: ''; /*Vacía el contenido inicial*/
+  display: block;
+  width: 15px; /*Ancho de las flechas*/
+  height: 15px; /*Alto de las flechas*/
+  border-top: 3px solid black; /*Color de la flecha*/
+  border-right: 3px solid black; /*Color de la flecha*/
+  transform: rotate(45deg);
+}
+
+.carousel-control-prev-icon::after {transform: rotate(-135deg); /*Ajusta la flecha hacia la izquierda*/}
+.carousel-control-next-icon::after {transform: rotate(45deg); /*Ajusta la flecha hacia la derecha*/}
