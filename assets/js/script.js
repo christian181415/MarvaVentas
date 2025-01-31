@@ -62,7 +62,7 @@ function createCard(truck) {
                   ${truck.images
                       .map((img, index) => `
                       <div class="carousel-item ${index === 0 ? "active" : ""}">
-                          <img src="${img.src}" class="d-block w-100" alt="${truck.title}" data-index="${index}">
+                          <img src="${img.src}" class="d-block w-100" alt="assets/img/Unidades/${truck.title}" data-index="${index}">
                       </div>
                   `)
                       .join("")}
