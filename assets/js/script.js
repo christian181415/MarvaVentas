@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const csvUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSXRSqnPwghUrq7uAef4E_48Cl_JwrbFujw90vRZCuLVMnUb9U8oy0uIRKbzGAloOQ15N6qysYw_iA2/pub?gid=0&single=true&output=csv"; // Reemplaza con tu URL
+  const csvUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSXRSqnPwghUrq7uAef4E_48Cl_JwrbFujw90vRZCuLVMnUb9U8oy0uIRKbzGAloOQ15N6qysYw_iA2/pub?output=csv";
 
   fetch(csvUrl)
       .then(response => response.text())
@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
           truckData = transformCSVToData(parsedData);
           populateCards();
       })
-      .catch(error => console.error("Error al cargar el CSV desde Google Sheets:", error));
+      .catch(error => console.error("Error al cargar la informacion:", error));
 });
 
 let truckData = [];
